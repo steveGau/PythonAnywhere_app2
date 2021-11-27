@@ -8,12 +8,12 @@ import plotly.express as px
 # from dash.dependencies import Input, Output, State
 # from dash.exceptions import PreventUpdate
 
-df = pd.read_csv('C:\\Users\\a2907\\Desktop\\pyApp\\stock\\buySaleStock\\code\\Deploy your App with PythonAnywhere and Dash Plotly\\politics.csv')
+df = pd.read_csv('C:\\Users\\a2907\\Desktop\\pyApp\\stock\\buySaleStock\\code\\Deploy your App with PythonAnywhere and Dash Plotly\\PythonAnywhere\\politics.csv')
 #you can also read your data like this:
 # df = pd.read_csv('/home/charmingdata1/demo-app3/politics.csv')
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-# server = app.server
+server = app.server
 
 # radioItem list for the layout (long_code.py lines 13-45)
 radio_list = []
